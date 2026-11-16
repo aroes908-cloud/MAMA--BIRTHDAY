@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#fff1f3">
+<title>Для самой лучшей мамы ❤️</title>
+<style>
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; min-height: 100vh; padding: 28px 16px;
+    display: grid; place-items: center;
+    background: radial-gradient(circle at top, #fff 0, #fff4f5 48%, #f9e3e8 100%);
+    color: #60444d; font-family: Georgia, "Times New Roman", serif;
+  }
+  .card {
+    width: min(720px, 100%); background: rgba(255,255,255,.88);
+    border: 1px solid #f3d7de; border-radius: 28px; padding: clamp(22px, 5vw, 48px);
+    box-shadow: 0 18px 60px rgba(151, 82, 104, .13); text-align: center;
+    position: relative; overflow: hidden;
+  }
+  .flower { font-size: 26px; letter-spacing: 9px; margin-bottom: 10px; }
+  h1 { color: #ad5b73; font-size: clamp(30px, 6vw, 46px); margin: 8px 0 14px; }
+  .intro { color: #946c77; font-style: italic; font-size: 18px; line-height: 1.6; }
+  .bouquet { font-size: clamp(48px, 10vw, 76px); margin: 18px 0; filter: drop-shadow(0 5px 7px #e8c2cb); }
+  button {
+    border: 0; border-radius: 999px; padding: 15px 25px; margin: 14px 0;
+    background: #b95f79; color: white; font: bold 17px Georgia, serif;
+    cursor: pointer; box-shadow: 0 8px 18px rgba(185,95,121,.22);
+    transition: transform .2s, background .2s;
+  }
+  button:hover { transform: translateY(-2px); background: #a94e69; }
+  button:focus-visible { outline: 3px solid #e6a9ba; outline-offset: 4px; }
+  #letter { display: none; text-align: left; line-height: 1.85; font-size: 18px; animation: appear .9s ease both; }
+  #letter.show { display: block; }
+  #letter p { margin: 17px 0; }
+  .highlight {
+    background: #fff0f3; border-radius: 20px; padding: 22px;
+    color: #a94e69; text-align: center; font-size: 23px; line-height: 1.5;
+    margin: 24px 0;
+  }
+  .ending { display: none; text-align: center; background: #fce9ee; border-radius: 20px; padding: 24px 16px; margin-top: 18px; animation: appear .8s ease both; }
+  .ending.show { display: block; }
+  .ending h2 { color: #a94e69; font-size: clamp(27px, 5vw, 38px); }
+  .signature { color: #a94e69; font-size: 22px; font-weight: bold; margin-top: 18px; }
+  .tiny { color: #b77b89; font-size: 13px; margin-top: 28px; }
+  .heart { position: fixed; pointer-events: none; animation: float 3.2s ease-out forwards; font-size: 22px; z-index: 5; }
+  @keyframes appear { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+  @keyframes float { from { opacity: 0; transform: translateY(0) scale(.7) rotate(0); } 15% { opacity: 1; } to { opacity: 0; transform: translateY(-180px) scale(1.3) rotate(25deg); } }
+</style>
+</head>
+<body>
+<main class="card">
+  <div class="flower">🌷 ✨ 🌷</div>
+  <h1>Для самой лучшей мамы</h1>
+  <div class="bouquet" aria-hidden="true">💐</div>
+  <h2 style="color:#a94e69; font-size:clamp(23px,4vw,30px)">Мамочка, с днём рождения!</h2>
+  <p class="intro">У меня есть кое-что очень важное, что я хочу тебе сказать…</p>
+  <button id="openButton" type="button">💌 Открыть моё послание</button>
+
+  <section id="letter" aria-live="polite">
+    <h2 style="text-align:center;color:#b34f6c">Мамочка, родная моя… ❤️</h2>
+    <p>Я не знаю, какими словами можно описать, насколько сильно я тебя люблю. Наверное, мне не хватит даже целой жизни, чтобы отблагодарить тебя за всё, что ты для меня сделала.</p>
+    <p>Прости меня за те моменты, когда я бываю вредным, когда не слушаюсь, спорю или не замечаю, как ты устаёшь. Прости, если иногда забываю говорить тебе самые важные слова.</p>
+    <p>Я хочу, чтобы ты знала: я замечаю гораздо больше, чем показываю. Я замечаю твою заботу, твои переживания, твою поддержку и то, сколько любви ты вкладываешь в меня каждый день.</p>
+    <p>Знаешь, мам, я могу вырасти, стать взрослым человеком, у меня появится своя жизнь, свои заботы и мечты. Но я никогда не перестану быть твоим ребёнком. И сколько бы мне ни было лет, мне всегда будет нужна моя мамочка.</p>
+    <p>Мне не нужна идеальная мама. Мне нужна именно ТЫ. Со своим характером, привычками, голосом, объятиями и даже своими маленькими странностями.</p>
+    <p>Я очень хочу, чтобы ты была счастлива. Чтобы ты чаще улыбалась, меньше переживала и никогда не сомневалась в том, что тебя любят.</p>
+    <div class="highlight"><strong>Ты уже подарила мне самое главное — свою любовь. ❤️</strong></div>
+    <p>С днём рождения, моя родная. Если бы мне пришлось выбирать маму заново, я бы снова выбрал тебя. В этой жизни и в каждой следующей.</p>
+    <div style="text-align:center">
+      <button id="lastButton" type="button">❤️ Ещё кое-что, мамочка…</button>
+    </div>
+    <div id="ending" class="ending">
+      <div style="font-size:48px">🌸 ❤️ 🌸</div>
+      <h2>Я ТЕБЯ ОЧЕНЬ ЛЮБЛЮ, МАМА!</h2>
+      <p style="font-size:20px">Спасибо, что именно ты — моя мама.</p>
+      <p class="signature">От твоего любимого сына Артёма ❤️</p>
+      <p style="font-style:italic;color:#946c77">Навсегда твой маленький мальчик.</p>
+    </div>
+  </section>
+  <div class="tiny">Сделано с огромной любовью для мамы 🌷</div>
+</main>
+<script>
+  const letter = document.getElementById('letter');
+  const ending = document.getElementById('ending');
+  function hearts() {
+    for (let i = 0; i < 14; i++) {
+      const heart = document.createElement('span');
+      heart.className = 'heart';
+      heart.textContent = ['💗','💕','❤️','🌸'][Math.floor(Math.random()*4)];
+      heart.style.left = (10 + Math.random()*80) + 'vw';
+      heart.style.top = (55 + Math.random()*35) + 'vh';
+      heart.style.animationDelay = (Math.random()*.7) + 's';
+      document.body.appendChild(heart);
+      setTimeout(() => heart.remove(), 4000);
+    }
+  }
+  document.getElementById('openButton').addEventListener('click', () => {
+    letter.classList.add('show');
+    document.getElementById('openButton').style.display = 'none';
+    hearts();
+    letter.scrollIntoView({behavior:'smooth', block:'start'});
+  });
+  document.getElementById('lastButton').addEventListener('click', () => {
+    ending.classList.add('show');
+    document.getElementById('lastButton').style.display = 'none';
+    hearts();
+    ending.scrollIntoView({behavior:'smooth', block:'center'});
+  });
+</script>
+</body>
+</html>
